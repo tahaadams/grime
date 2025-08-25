@@ -15,29 +15,29 @@
 
 # Table of Contents
 ****
-- <a href="#-directions">**Directions**</a>
-- <a href="#-imageprocessortest">**ImageProcessorTest**</a>
-- <a href="#-textimageprocessor">**TextImageProcessor**</a>
-- <a href="#-guiimageprocessor">**GUIImageProcessor**</a>
-- <a href="#-guiimagefeatures">**GUIImageFeatures**</a>
+- [**Directions**](#directions)
+- [**ImageProcessorTest**](#imageprocessortestimageprocessortest)
+- [**TextImageProcessor**](#textimageprocessortextimageprocessor-class--application)
+- [**GUIImageProcessor**](#guiimageprocessorguiimageprocessor-class--application)
+- [**GUIImageFeatures**](#guiimagefeaturesguiimagefeatures-class)
 
-- <a href="#-imodel">**IModel**</a>
+- [**IModel**](#imodelimodel-interface)
 
-  - <a href="#-imagemodel">ImageModel</a>
+  - [ImageModel](#imagemodelimagemodel-class)
 
-  - <a href="#-imagedata">ImageData</a>
-  - <a href="#-imagehistogram">ImageHistogram</a>
+  - [ImageData](#imagedataimagedata-class)
+  - [ImageHistogram](#imagehistogramimagehistogram-class)
 
-  - <a href="#-rgb">RGB</a>
+  - [RGB](#rgbrgb-class)
 
-- <a href="#-iview">**IView**</a>
+- [**IView**](#iviewiview-interface)
   
-  - <a href="#-imageview">ImageView</a>
+  - [ImageView](#imageviewimageview-class)
 
-- <a href="#-icontroller">**IController**</a>
+- [**IController**](#icontrollericontroller-interface)
   
-  - <a href="#-imagecontrol">ImageControl</a>
-- <a href="#-citations">**Citations**</a>
+  - [ImageControl](#imagecontrolimagecontrol-class)
+- [**Citations**](#citations)
 
 ## Directions
 *****
@@ -55,18 +55,23 @@ OR
 1. Open the res file.
 2. Open grime.jar
 
+[**Back to Table Of Contents**](#table-of-contents)
+
 ## [ImageProcessorTest][ImageProcessorTest]
 *****
 **Contains the general tests for the image processor***
 
 *At its current state, the tests do not actually confirm the inputs work, due to technical issues. However, if you were to follows the given directions above, running the tests should create all the designated images without fail.
 
-  
+[**Back to Table Of Contents**](#table-of-contents)
+
 ## [TextImageProcessor][TextImageProcessor] Class / Application
 ****
 
 **Contains the application that runs the image processor in text form**
  - `public static void main(String []args)` Runs the entire image processor through commands
+
+[**Back to Table Of Contents**](#table-of-contents)
 
 ## [GUIImageProcessor][GUIImageProcessor] Class / Application
 ****
@@ -74,18 +79,23 @@ OR
 **Contains the application that runs the image processor in GUI form**
 - `public static void main(String []args)` Runs the entire image processor through GUI
 
+[**Back to Table Of Contents**](#table-of-contents)
+
 ## [GUIImageFeatures][GUIImageFeatures] Class
 ****
 
 **Contains the application that runs the image processor in GUI form**
 - `public static void main(String []args)` Runs the entire image processor through GUI
 
+[**Back to Table Of Contents**](#table-of-contents)
 
 ## [IModel][IModel] Interface
 ****
 
 **Contains the methods that alter the data.**
 (*are represented in the class* ***ImageModel***)
+
+[**Back to Table Of Contents**](#table-of-contents)
 
 ### [ImageModel][ImageModel] Class
 ****
@@ -104,6 +114,8 @@ OR
  - `void savePPM(String name, ImageData data)` Saves a PPM image with given directory and uses an image data from the image package
  - `void saveOther(String name, ImageData data)` Saves an image with given directory and uses an image data from the image package
  - `BufferedImage returnBuffer(ImageData data)` Returns a BufferedImage of the given ImageData
+
+[**Back to Table Of Contents**](#table-of-contents)
 
 ### [ImageData][ImageData] Class
 ****
@@ -134,6 +146,8 @@ OR
   int j)` Helper for adjusting the RGB values
 - `ImageData maskImage(ImageData updatedID, ImageData maskID)` Masks the RGB values with the given reference Mask and updated RGB values
 
+[**Back to Table Of Contents**](#table-of-contents)
+
 ### [ImageHistogram][ImageHistogram] Class
 ****
 `int maxValue` Holds the maximum value in any section of the histogram
@@ -149,6 +163,8 @@ OR
 `public RGB(ImageData data)` Creates a new histogram based on the given data
 
 - `public void paint(Graphics g)` Paints the histogram itself
+
+[**Back to Table Of Contents**](#table-of-contents)
 
 ### [RGB][RGB] Class
 ****
@@ -179,11 +195,15 @@ OR
 - `protected boolean isWhite()` determines whether the RGB value is white
 - `protected boolean isBlack()` determines whether the RGB value is black
 
+[**Back to Table Of Contents**](#table-of-contents)
+
 ## [IView][IView] Interface
 ****
 
 **Contains the methods that display the data.**
 (*are represented in the class* ***ImageView***)
+
+[**Back to Table Of Contents**](#table-of-contents)
 
 ### [ImageView][ImageView] Class
 ****
@@ -202,11 +222,15 @@ OR
  - `public void showOptions(String inputType, String options)` Displays the option message of the view with the specific input type and options
  - `public void showError(String type, String message)` Displays the error message of the view with the specfic type and message
 
+[**Back to Table Of Contents**](#table-of-contents)
+
 ## [IController][IController] Interface
 ****
 
 **Contains the methods that transfer the data.**
 (*are represented in the class* ***ImageControl***)
+
+[**Back to Table Of Contents**](#table-of-contents)
 
 ### [ImageControl][ImageControl] Class
 ****
@@ -221,9 +245,13 @@ OR
 
 - `public void run()` Runs the controller
 
+[**Back to Table Of Contents**](#table-of-contents)
+
 # Citations
 ****
  - **myImage.jpg** From Tyler Knohl
+
+[**Back to Table Of Contents**](#table-of-contents)
 
 [ImageHistogram]: src/ImageHistogram.java
 [GUIImageFeatures]: src/GUIImageFeatures.java
