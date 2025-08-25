@@ -15,29 +15,29 @@
 
 # Table of Contents
 ****
-- **Directions**
-- **ImageProcessorTest**
-- **TextImageProcessor**
-- **GUIImageProcessor**
-- **GUIImageFeatures**
+- <a href="#-directions">**Directions**</a>
+- <a href="#-imageprocessortest">**ImageProcessorTest**</a>
+- <a href="#-textimageprocessor">**TextImageProcessor**</a>
+- <a href="#-guiimageprocessor">**GUIImageProcessor**</a>
+- <a href="#-guiimagefeatures">**GUIImageFeatures**</a>
 
-- **IModel**
+- <a href="#-imodel">**IModel**</a>
 
-  - ImageModel
+  - <a href="#-imagemodel">ImageModel</a>
 
-  - ImageData
-  - ImageHistogram
+  - <a href="#-imagedata">ImageData</a>
+  - <a href="#-imagehistogram">ImageHistogram</a>
 
-  - RGB
+  - <a href="#-rgb">RGB</a>
 
-- **IView**
+- <a href="#-iview">**IView**</a>
   
-  - ImageView
+  - <a href="#-imageview">ImageView</a>
 
-- **IController**
+- <a href="#-icontroller">**IController**</a>
   
-  - ImageControl
-- **Citations**
+  - <a href="#-imagecontrol">ImageControl</a>
+- <a href="#-citations">**Citations**</a>
 
 ## Directions
 *****
