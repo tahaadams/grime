@@ -1,4 +1,4 @@
-## NEW
+# NEW
 ****
 **Added Masking Feature into TextImageProcessor**
 - Added method `ImageData maskImage(ImageData updatedID, ImageData maskID)` in the [ImageData][ImageData] class
@@ -13,10 +13,10 @@
 - Added method `ImageData shift(String component, int shift)` in the [ImageData][ImageData] class
 
 
-## Table of Contents
+# Table of Contents
 ****
 - **Directions**
-- **TextImageProcessorTest**
+- **ImageProcessorTest**
 - **TextImageProcessor**
 - **GUIImageProcessor**
 - **GUIImageFeatures**
@@ -39,7 +39,7 @@
   - ImageControl
 - **Citations**
 
-#Directions
+## Directions
 *****
 
 **To Run The Application In TextImageProcessor** 
@@ -53,41 +53,41 @@
 OR
 
 1. Open the res file.
-2. Open Assignment06.jar
+2. Open grime.jar
 
-#[TextImageProcessorTest][TextImageProcessorTest]
+## [ImageProcessorTest][ImageProcessorTest]
 *****
 **Contains the general tests for the image processor***
 
 *At its current state, the tests do not actually confirm the inputs work, due to technical issues. However, if you were to follows the given directions above, running the tests should create all the designated images without fail.
 
   
-#[TextImageProcessor][TextImageProcessor] Class / Application
+## [TextImageProcessor][TextImageProcessor] Class / Application
 ****
 
 **Contains the application that runs the image processor in text form**
  - `public static void main(String []args)` Runs the entire image processor through commands
 
-#[GUIImageProcessor][GUIImageProcessor] Class / Application
+## [GUIImageProcessor][GUIImageProcessor] Class / Application
 ****
 
 **Contains the application that runs the image processor in GUI form**
 - `public static void main(String []args)` Runs the entire image processor through GUI
 
-#[GUIImageFeatures][GUIImageFeatures] Class
+## [GUIImageFeatures][GUIImageFeatures] Class
 ****
 
 **Contains the application that runs the image processor in GUI form**
 - `public static void main(String []args)` Runs the entire image processor through GUI
 
 
-#[IModel][IModel] Interface
+## [IModel][IModel] Interface
 ****
 
 **Contains the methods that alter the data.**
 (*are represented in the class* ***ImageModel***)
 
-##[ImageModel][ImageModel] Class
+### [ImageModel][ImageModel] Class
 ****
 
 `protected Map<String, ImageData> imagePackage` Holds a package of images in terms of String and ImageData
@@ -105,7 +105,7 @@ OR
  - `void saveOther(String name, ImageData data)` Saves an image with given directory and uses an image data from the image package
  - `BufferedImage returnBuffer(ImageData data)` Returns a BufferedImage of the given ImageData
 
-##[ImageData][ImageData] Class
+### [ImageData][ImageData] Class
 ****
 
 `private int width` Holds the width of the image
@@ -134,7 +134,7 @@ OR
   int j)` Helper for adjusting the RGB values
 - `ImageData maskImage(ImageData updatedID, ImageData maskID)` Masks the RGB values with the given reference Mask and updated RGB values
 
-##[ImageHistogram][ImageHistogram] Class
+### [ImageHistogram][ImageHistogram] Class
 ****
 `int maxValue` Holds the maximum value in any section of the histogram
 
@@ -150,7 +150,7 @@ OR
 
 - `public void paint(Graphics g)` Paints the histogram itself
 
-##[RGB][RGB] Class
+### [RGB][RGB] Class
 ****
 
 `int red` Holds the red of the RGB
@@ -179,13 +179,13 @@ OR
 - `protected boolean isWhite()` determines whether the RGB value is white
 - `protected boolean isBlack()` determines whether the RGB value is black
 
-#[IView][IView] Interface
+## [IView][IView] Interface
 ****
 
 **Contains the methods that display the data.**
 (*are represented in the class* ***ImageView***)
 
-##[ImageView][ImageView] Class
+### [ImageView][ImageView] Class
 ****
 
 `private PrintStream out` Holds the output of the view 
@@ -202,13 +202,13 @@ OR
  - `public void showOptions(String inputType, String options)` Displays the option message of the view with the specific input type and options
  - `public void showError(String type, String message)` Displays the error message of the view with the specfic type and message
 
-#[IController][IController] Interface
+## [IController][IController] Interface
 ****
 
 **Contains the methods that transfer the data.**
 (*are represented in the class* ***ImageControl***)
 
-##[ImageControl][ImageControl] Class
+### [ImageControl][ImageControl] Class
 ****
 
 `private Scanner in` Holds the input of the controller
@@ -221,14 +221,14 @@ OR
 
 - `public void run()` Runs the controller
 
-#Citations
+# Citations
 ****
  - **myImage.jpg** From Tyler Knohl
 
 [ImageHistogram]: src/ImageHistogram.java
 [GUIImageFeatures]: src/GUIImageFeatures.java
 [GUIImageProcessor]: src/GUIImageProcessor.java
-[TextImageProcessorTest]: test/TextImageProcessorTest.java
+[ImageProcessorTest]: test/ImageProcessorTest.java
 [TextImageProcessor]: src/TextImageProcessor.java
 [IModel]: src/IModel.java
 [IView]: src/IView.java
