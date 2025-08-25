@@ -1,7 +1,7 @@
 <component name="ArtifactManager">
-  <artifact type="jar" name="Assignment08:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/Assignment08_jar</output-path>
-    <root id="archive" name="Assignment08.jar">
+  <artifact type="jar" build-on-make="true" name="grime:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/grime_jar</output-path>
+    <root id="archive" name="grime.jar">
       <element id="module-output" name="grime" />
     </root>
   </artifact>

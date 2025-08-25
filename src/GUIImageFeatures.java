@@ -46,7 +46,7 @@ public class GUIImageFeatures extends JFrame implements ActionListener, ItemList
   public GUIImageFeatures() {
     model = new ImageModel();
 
-    setTitle("Guiip");
+    setTitle("GRIME");
     Dimension sc = Toolkit.getDefaultToolkit().getScreenSize();
     int width = (int) Math.round(sc.getWidth() / 2);
     int height = (int) Math.round(sc.getHeight() / 2);
