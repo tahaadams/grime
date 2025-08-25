@@ -1,0 +1,42 @@
+load res/myImage.jpg myImage
+load res/MaskImage.png maskImage
+load res/BadMaskImage.png badMaskImage
+load res/BadMaskImage2.png badMaskImage2
+
+filter red myImage myImageRed yes maskImage
+save res/myImageRed.png myImageRed
+filter blue myImage myImageBlue yes badMaskImage
+save res/myImageBlue.png myImageBlue
+filter blue myImage myImageBlue yes badMaskImage2
+save res/myImageBlue.png myImageBlue
+filter sepia myImage myImageSepia no
+save res/myImageSepia.png myImageSepia
+
+adjust blur myImage myImageBlur1 yes maskImage
+save res/myImageBlur1.png myImageBlur1
+adjust blur myImage myImageBlur2 yes badMaskImage
+save res/myImageBlur2.png myImageBlur2
+adjust blur myImage myImageBlur2 yes badMaskImage2
+save res/myImageBlur2.png myImageBlur2
+adjust sharpen myImage myImageSharpen no
+save res/myImageSharpen.png myImageSharpen
+
+flip horizontal myImage myImageHorizontal1 yes maskImage
+save res/myImageHorizontal1.png myImageHorizontal1
+flip horizontal myImage myImageHorizontal2 yes badMaskImage
+save res/myImageHorizontal2.png myImageHorizontal2
+flip horizontal myImage myImageHorizontal2 yes badMaskImage2
+save res/myImageHorizontal2.png myImageHorizontal2
+flip vertical myImage myImageVertical no
+save res/myImageVertical.png myImageVertical
+
+shift brighten 50 myImage myImageBrighten1 yes maskImage
+save res/myImageBrighten1.png myImageBrighten1
+shift brighten 50 myImage myImageBrighten2 yes badMaskImage
+save res/myImageBrighten2.png myImageBrighten2
+shift brighten 50 myImage myImageBrighten2 yes badMaskImage2
+save res/myImageBrighten2.png myImageBrighten2
+shift darken 50 myImage myImageDarken no
+save res/myImageDarken.png myImageDarken
+
+quit

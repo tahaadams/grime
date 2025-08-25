@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Assignment08:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Assignment08_jar</output-path>
+    <root id="archive" name="Assignment08.jar">
+      <element id="module-output" name="grime" />
+    </root>
+  </artifact>
+</component>
