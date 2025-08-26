@@ -1,3 +1,5 @@
+For best results, access via Intellij IDEA.
+
 # NEW
 ****
 **Added Masking Feature into TextImageProcessor**
